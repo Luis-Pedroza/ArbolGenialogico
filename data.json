@@ -1,0 +1,1293 @@
+{
+ "people": [
+  {
+   "parents": [
+    "pmw1xopo5uj5",
+    "pmw1xp8ikux0"
+   ],
+   "partners": [
+    "pmw1xf2jvfxz"
+   ],
+   "ex": [],
+   "id": "pmw1xeob88bq",
+   "name": "Luis Fernando Pedroza Moranchel",
+   "dates": "1995",
+   "gen": 6,
+   "x": -1008,
+   "dead": false,
+   "photo": ""
+  },
+  {
+   "parents": [],
+   "partners": [
+    "pmw1xeob88bq"
+   ],
+   "ex": [],
+   "id": "pmw1xf2jvfxz",
+   "name": "Maria de los Angeles Rangel Olguin",
+   "dates": "1986",
+   "gen": 6,
+   "x": -843,
+   "dead": false,
+   "photo": ""
+  },
+  {
+   "parents": [
+    "pmw1xf2jvfxz"
+   ],
+   "partners": [],
+   "ex": [],
+   "id": "pmw1xh2mz3ob",
+   "name": "Christopher Garcia Rangel",
+   "dates": "",
+   "gen": 7,
+   "x": -843,
+   "dead": false,
+   "photo": ""
+  },
+  {
+   "parents": [
+    "pmw1y873hb2c",
+    "pmw1y9tss0fx"
+   ],
+   "partners": [
+    "pmw1xp8ikux0",
+    "pmw1y31f1ckg"
+   ],
+   "ex": [],
+   "id": "pmw1xopo5uj5",
+   "name": "Fernando Pedroza Moreno",
+   "dates": "",
+   "gen": 5,
+   "x": -1167,
+   "dead": false,
+   "photo": ""
+  },
+  {
+   "parents": [
+    "pmw208xvcu53",
+    "pmw209l6ve99"
+   ],
+   "partners": [
+    "pmw1xopo5uj5"
+   ],
+   "ex": [],
+   "id": "pmw1xp8ikux0",
+   "name": "Reina Moranchel Roman",
+   "dates": "",
+   "gen": 5,
+   "x": -909,
+   "dead": false,
+   "photo": ""
+  },
+  {
+   "parents": [
+    "pmw1xopo5uj5",
+    "pmw1xp8ikux0"
+   ],
+   "partners": [
+    "pmw1xv9okiyg",
+    "pmw1xyepgfax",
+    "pmw1zv93bqkb"
+   ],
+   "ex": [],
+   "id": "pmw1xtlfghuo",
+   "name": "Osiris Aline Pedroza Moranchel",
+   "dates": "",
+   "gen": 6,
+   "x": -1258,
+   "dead": false,
+   "photo": ""
+  },
+  {
+   "parents": [
+    "pmw1xopo5uj5",
+    "pmw1xp8ikux0"
+   ],
+   "partners": [
+    "pmw1xzvrw3mh"
+   ],
+   "ex": [],
+   "id": "pmw1xufi4d39",
+   "name": "Ana Paola Pedroza Moranchel",
+   "dates": "",
+   "gen": 6,
+   "x": -687,
+   "dead": false,
+   "photo": ""
+  },
+  {
+   "parents": [],
+   "partners": [
+    "pmw1xtlfghuo"
+   ],
+   "ex": [
+    "pmw1xtlfghuo"
+   ],
+   "id": "pmw1xv9okiyg",
+   "name": "Cesar Gomez",
+   "dates": "",
+   "gen": 6,
+   "x": -1498,
+   "dead": false,
+   "photo": ""
+  },
+  {
+   "parents": [
+    "pmw1xv9okiyg",
+    "pmw1xtlfghuo"
+   ],
+   "partners": [],
+   "ex": [],
+   "id": "pmw1xxuv04an",
+   "name": "Evan Cesar Gomez Pedroza",
+   "dates": "",
+   "gen": 7,
+   "x": -1502,
+   "dead": false,
+   "photo": ""
+  },
+  {
+   "parents": [],
+   "partners": [
+    "pmw1xtlfghuo"
+   ],
+   "ex": [
+    "pmw1xtlfghuo"
+   ],
+   "id": "pmw1xyepgfax",
+   "name": "Juan",
+   "dates": "",
+   "gen": 6,
+   "x": -1371,
+   "dead": false,
+   "photo": ""
+  },
+  {
+   "parents": [
+    "pmw1xyepgfax",
+    "pmw1xtlfghuo"
+   ],
+   "partners": [],
+   "ex": [],
+   "id": "pmw1xyo6zoc7",
+   "name": "Victor Andre algo Pedroza",
+   "dates": "",
+   "gen": 7,
+   "x": -1374,
+   "dead": false,
+   "photo": ""
+  },
+  {
+   "parents": [],
+   "partners": [
+    "pmw1xufi4d39"
+   ],
+   "ex": [],
+   "id": "pmw1xzvrw3mh",
+   "name": "Anapul",
+   "dates": "",
+   "gen": 6,
+   "x": -563,
+   "dead": false,
+   "photo": ""
+  },
+  {
+   "parents": [],
+   "partners": [
+    "pmw1xopo5uj5"
+   ],
+   "ex": [
+    "pmw1xopo5uj5"
+   ],
+   "id": "pmw1y31f1ckg",
+   "name": "Pareja",
+   "dates": "",
+   "gen": 5,
+   "x": -2258,
+   "dead": false,
+   "photo": ""
+  },
+  {
+   "parents": [
+    "pmw1y31f1ckg",
+    "pmw1xopo5uj5"
+   ],
+   "partners": [
+    "pmw1y7bb93t2"
+   ],
+   "ex": [],
+   "id": "pmw1y3n98r95",
+   "name": "Priscila Esperanza Pedroza Cabello",
+   "dates": "",
+   "gen": 6,
+   "x": -2569,
+   "dead": false,
+   "photo": ""
+  },
+  {
+   "parents": [
+    "pmw1y31f1ckg",
+    "pmw1xopo5uj5"
+   ],
+   "partners": [],
+   "ex": [],
+   "id": "pmw1y3ur9lx2",
+   "name": "Pamela Monserrat Pedroza Cabello",
+   "dates": "",
+   "gen": 6,
+   "x": -2723,
+   "dead": false,
+   "photo": ""
+  },
+  {
+   "parents": [
+    "pmw1y31f1ckg",
+    "pmw1xopo5uj5"
+   ],
+   "partners": [
+    "pmw1y6vdhq9c"
+   ],
+   "ex": [],
+   "id": "pmw1y407h4gs",
+   "name": "Eduardo Francisco Pedroza Cabello",
+   "dates": "",
+   "gen": 6,
+   "x": -2240,
+   "dead": false,
+   "photo": ""
+  },
+  {
+   "parents": [
+    "pmw1y31f1ckg",
+    "pmw1xopo5uj5"
+   ],
+   "partners": [
+    "pmw1y6mbvgor"
+   ],
+   "ex": [],
+   "id": "pmw1y435ob5f",
+   "name": "David Ecatl Pedroza Cabello",
+   "dates": "",
+   "gen": 6,
+   "x": -1959,
+   "dead": false,
+   "photo": ""
+  },
+  {
+   "parents": [],
+   "partners": [
+    "pmw1y435ob5f"
+   ],
+   "ex": [],
+   "id": "pmw1y6mbvgor",
+   "name": "Pareja",
+   "dates": "",
+   "gen": 6,
+   "x": -1809,
+   "dead": false,
+   "photo": ""
+  },
+  {
+   "parents": [
+    "pmw1y6mbvgor",
+    "pmw1y435ob5f"
+   ],
+   "partners": [],
+   "ex": [],
+   "id": "pmw1y6nx1k6b",
+   "name": "Hijo/a",
+   "dates": "",
+   "gen": 7,
+   "x": -1884,
+   "dead": false,
+   "photo": ""
+  },
+  {
+   "parents": [],
+   "partners": [
+    "pmw1y407h4gs"
+   ],
+   "ex": [],
+   "id": "pmw1y6vdhq9c",
+   "name": "Pareja",
+   "dates": "",
+   "gen": 6,
+   "x": -2056,
+   "dead": false,
+   "photo": ""
+  },
+  {
+   "parents": [
+    "pmw1y6vdhq9c",
+    "pmw1y407h4gs"
+   ],
+   "partners": [],
+   "ex": [],
+   "id": "pmw1y6wvph1o",
+   "name": "Hijo/a",
+   "dates": "",
+   "gen": 7,
+   "x": -2155,
+   "dead": false,
+   "photo": ""
+  },
+  {
+   "parents": [],
+   "partners": [
+    "pmw1y3n98r95"
+   ],
+   "ex": [],
+   "id": "pmw1y7bb93t2",
+   "name": "Pareja",
+   "dates": "",
+   "gen": 6,
+   "x": -2368,
+   "dead": false,
+   "photo": ""
+  },
+  {
+   "parents": [
+    "pmw1y7bb93t2",
+    "pmw1y3n98r95"
+   ],
+   "partners": [],
+   "ex": [],
+   "id": "pmw1y7cp9uju",
+   "name": "Hijo/a",
+   "dates": "",
+   "gen": 7,
+   "x": -2484,
+   "dead": false,
+   "photo": ""
+  },
+  {
+   "parents": [
+    "pmw200aqfjxn",
+    "pmw201rw783n"
+   ],
+   "partners": [
+    "pmw1y9tss0fx"
+   ],
+   "ex": [],
+   "id": "pmw1y873hb2c",
+   "name": "David Pedroza Millan",
+   "dates": "",
+   "gen": 4,
+   "x": -3806,
+   "dead": true,
+   "photo": ""
+  },
+  {
+   "parents": [
+    "pmw1zwruuu08",
+    "pmw1zz46uoe1"
+   ],
+   "partners": [
+    "pmw1y873hb2c"
+   ],
+   "ex": [],
+   "id": "pmw1y9tss0fx",
+   "name": "Esperanza Moreno Hernandez",
+   "dates": "",
+   "gen": 4,
+   "x": -3652,
+   "dead": false,
+   "photo": ""
+  },
+  {
+   "parents": [
+    "pmw1y873hb2c",
+    "pmw1y9tss0fx"
+   ],
+   "partners": [
+    "pmw1ypvd16hu",
+    "pmw1ypwudg73"
+   ],
+   "ex": [],
+   "id": "pmw1ybmv9wpx",
+   "name": "Jesus Pedroza Moreno",
+   "dates": "",
+   "gen": 5,
+   "x": -5233,
+   "dead": false,
+   "photo": ""
+  },
+  {
+   "parents": [
+    "pmw1y873hb2c",
+    "pmw1y9tss0fx"
+   ],
+   "partners": [
+    "pmw1ylz657yz",
+    "pmw1ym1thl4p"
+   ],
+   "ex": [],
+   "id": "pmw1ybsxxvve",
+   "name": "Carmen Pedroza Moreno",
+   "dates": "",
+   "gen": 5,
+   "x": -4251,
+   "dead": false,
+   "photo": ""
+  },
+  {
+   "parents": [
+    "pmw1y873hb2c",
+    "pmw1y9tss0fx"
+   ],
+   "partners": [
+    "pmw1yjwv1w1q"
+   ],
+   "ex": [],
+   "id": "pmw1ybvodaex",
+   "name": "David Pedroza Moreno",
+   "dates": "",
+   "gen": 5,
+   "x": -3818,
+   "dead": false,
+   "photo": ""
+  },
+  {
+   "parents": [
+    "pmw1y873hb2c",
+    "pmw1y9tss0fx"
+   ],
+   "partners": [
+    "pmw1ygdv1ri2"
+   ],
+   "ex": [],
+   "id": "pmw1ybyqlqfx",
+   "name": "Antonio Pedroza Moreno",
+   "dates": "",
+   "gen": 5,
+   "x": -3367,
+   "dead": false,
+   "photo": ""
+  },
+  {
+   "parents": [
+    "pmw1y873hb2c",
+    "pmw1y9tss0fx"
+   ],
+   "partners": [
+    "pmw1yf5q5w02"
+   ],
+   "ex": [],
+   "id": "pmw1yc24csu4",
+   "name": "Francisco Pedroza Moreno",
+   "dates": "",
+   "gen": 5,
+   "x": -3022,
+   "dead": false,
+   "photo": ""
+  },
+  {
+   "parents": [
+    "pmw1y873hb2c",
+    "pmw1y9tss0fx"
+   ],
+   "partners": [
+    "pmw1z8ihyt95"
+   ],
+   "ex": [],
+   "id": "pmw1yc5ctwca",
+   "name": "Martin Pedroza Moreno",
+   "dates": "",
+   "gen": 5,
+   "x": -6014,
+   "dead": false,
+   "photo": ""
+  },
+  {
+   "parents": [],
+   "partners": [
+    "pmw1yc24csu4"
+   ],
+   "ex": [],
+   "id": "pmw1yf5q5w02",
+   "name": "Esmeralda",
+   "dates": "",
+   "gen": 5,
+   "x": -2877,
+   "dead": false,
+   "photo": ""
+  },
+  {
+   "parents": [
+    "pmw1yf5q5w02"
+   ],
+   "partners": [],
+   "ex": [],
+   "id": "pmw1yfiy59k4",
+   "name": "Leonardo",
+   "dates": "",
+   "gen": 6,
+   "x": -2879,
+   "dead": false,
+   "photo": ""
+  },
+  {
+   "parents": [],
+   "partners": [
+    "pmw1ybyqlqfx"
+   ],
+   "ex": [],
+   "id": "pmw1ygdv1ri2",
+   "name": "Lourdes Martinez",
+   "dates": "",
+   "gen": 5,
+   "x": -3186,
+   "dead": false,
+   "photo": ""
+  },
+  {
+   "parents": [
+    "pmw1ygdv1ri2",
+    "pmw1ybyqlqfx"
+   ],
+   "partners": [],
+   "ex": [],
+   "id": "pmw1ygn59uw8",
+   "name": "Lorena Pedroza Martinez",
+   "dates": "",
+   "gen": 6,
+   "x": -3496,
+   "dead": false,
+   "photo": ""
+  },
+  {
+   "parents": [
+    "pmw1ybyqlqfx",
+    "pmw1ygdv1ri2"
+   ],
+   "partners": [],
+   "ex": [],
+   "id": "pmw1ygp51e6m",
+   "name": "David Antonio Pedroza MArtinez",
+   "dates": "",
+   "gen": 6,
+   "x": -3281,
+   "dead": false,
+   "photo": ""
+  },
+  {
+   "parents": [
+    "pmw1ygdv1ri2",
+    "pmw1ybyqlqfx"
+   ],
+   "partners": [],
+   "ex": [],
+   "id": "pmw1ygqh1b99",
+   "name": "Angela Pedroza Martinez",
+   "dates": "",
+   "gen": 6,
+   "x": -3078,
+   "dead": false,
+   "photo": ""
+  },
+  {
+   "parents": [],
+   "partners": [
+    "pmw1ybvodaex"
+   ],
+   "ex": [],
+   "id": "pmw1yjwv1w1q",
+   "name": "Margarita Minor",
+   "dates": "",
+   "gen": 5,
+   "x": -3620,
+   "dead": true,
+   "photo": ""
+  },
+  {
+   "parents": [
+    "pmw1yjwv1w1q",
+    "pmw1ybvodaex"
+   ],
+   "partners": [],
+   "ex": [],
+   "id": "pmw1ykb6tajc",
+   "name": "Tadeo Pedroza Minor",
+   "dates": "",
+   "gen": 6,
+   "x": -3821,
+   "dead": false,
+   "photo": ""
+  },
+  {
+   "parents": [
+    "pmw1yjwv1w1q",
+    "pmw1ybvodaex"
+   ],
+   "partners": [],
+   "ex": [],
+   "id": "pmw1ykfe5u70",
+   "name": "Guadalupe Pedroza Minor",
+   "dates": "",
+   "gen": 6,
+   "x": -3615,
+   "dead": true,
+   "photo": ""
+  },
+  {
+   "parents": [],
+   "partners": [
+    "pmw1ybsxxvve"
+   ],
+   "ex": [
+    "pmw1ybsxxvve"
+   ],
+   "id": "pmw1ylz657yz",
+   "name": "Pareja",
+   "dates": "",
+   "gen": 5,
+   "x": -3977,
+   "dead": false,
+   "photo": ""
+  },
+  {
+   "parents": [],
+   "partners": [
+    "pmw1ybsxxvve"
+   ],
+   "ex": [
+    "pmw1ybsxxvve"
+   ],
+   "id": "pmw1ym1thl4p",
+   "name": "Pareja",
+   "dates": "",
+   "gen": 5,
+   "x": -4484,
+   "dead": false,
+   "photo": ""
+  },
+  {
+   "parents": [
+    "pmw1ylz657yz",
+    "pmw1ybsxxvve"
+   ],
+   "partners": [
+    "pmw1yne59i9p"
+   ],
+   "ex": [],
+   "id": "pmw1ymlul7bu",
+   "name": "Miguel Angel Juarez Pedroza",
+   "dates": "",
+   "gen": 6,
+   "x": -4132,
+   "dead": false,
+   "photo": ""
+  },
+  {
+   "parents": [
+    "pmw1ylz657yz",
+    "pmw1ybsxxvve"
+   ],
+   "partners": [],
+   "ex": [],
+   "id": "pmw1ymost41p",
+   "name": "Daniel Albberto Juarez Pedroza",
+   "dates": "",
+   "gen": 6,
+   "x": -3979,
+   "dead": false,
+   "photo": ""
+  },
+  {
+   "parents": [],
+   "partners": [
+    "pmw1ymlul7bu"
+   ],
+   "ex": [],
+   "id": "pmw1yne59i9p",
+   "name": "Pareja",
+   "dates": "",
+   "gen": 6,
+   "x": -4331,
+   "dead": false,
+   "photo": ""
+  },
+  {
+   "parents": [
+    "pmw1yne59i9p",
+    "pmw1ymlul7bu"
+   ],
+   "partners": [],
+   "ex": [],
+   "id": "pmw1yniql0ly",
+   "name": "Hijo/a",
+   "dates": "",
+   "gen": 7,
+   "x": -4232,
+   "dead": true,
+   "photo": ""
+  },
+  {
+   "parents": [
+    "pmw1ym1thl4p",
+    "pmw1ybsxxvve"
+   ],
+   "partners": [],
+   "ex": [],
+   "id": "pmw1yoa1xsjr",
+   "name": "Fernando Pedroza Moreno",
+   "dates": "",
+   "gen": 6,
+   "x": -4474,
+   "dead": false,
+   "photo": ""
+  },
+  {
+   "parents": [],
+   "partners": [
+    "pmw1ybmv9wpx"
+   ],
+   "ex": [
+    "pmw1ybmv9wpx"
+   ],
+   "id": "pmw1ypvd16hu",
+   "name": "Concepcion Ordaz",
+   "dates": "",
+   "gen": 5,
+   "x": -4614,
+   "dead": false,
+   "photo": ""
+  },
+  {
+   "parents": [],
+   "partners": [
+    "pmw1ybmv9wpx"
+   ],
+   "ex": [],
+   "id": "pmw1ypwudg73",
+   "name": "Pareja",
+   "dates": "",
+   "gen": 5,
+   "x": -5682,
+   "dead": false,
+   "photo": ""
+  },
+  {
+   "parents": [
+    "pmw1ypvd16hu",
+    "pmw1ybmv9wpx"
+   ],
+   "partners": [
+    "pmw1ytxjxk2o"
+   ],
+   "ex": [],
+   "id": "pmw1yqq0l9cb",
+   "name": "Alberto Pedroza Ordaz",
+   "dates": "",
+   "gen": 6,
+   "x": -5050,
+   "dead": false,
+   "photo": ""
+  },
+  {
+   "parents": [
+    "pmw1ypvd16hu",
+    "pmw1ybmv9wpx"
+   ],
+   "partners": [],
+   "ex": [],
+   "id": "pmw1yqrhqbgs",
+   "name": "Monica Estefani Pedroza Ordaz",
+   "dates": "",
+   "gen": 6,
+   "x": -4741,
+   "dead": false,
+   "photo": ""
+  },
+  {
+   "parents": [
+    "pmw1ypvd16hu",
+    "pmw1ybmv9wpx"
+   ],
+   "partners": [],
+   "ex": [],
+   "id": "pmw1yqsrhfg0",
+   "name": "David Pedroza Ordaz",
+   "dates": "",
+   "gen": 6,
+   "x": -4613,
+   "dead": false,
+   "photo": ""
+  },
+  {
+   "parents": [
+    "pmw1ypvd16hu",
+    "pmw1ybmv9wpx"
+   ],
+   "partners": [
+    "pmw1yu0lhtgy"
+   ],
+   "ex": [],
+   "id": "pmw1yqu0u9aj",
+   "name": "Jose de Jesus Pedroza Ordaz",
+   "dates": "",
+   "gen": 6,
+   "x": -5395,
+   "dead": false,
+   "photo": ""
+  },
+  {
+   "parents": [],
+   "partners": [
+    "pmw1yqq0l9cb"
+   ],
+   "ex": [],
+   "id": "pmw1ytxjxk2o",
+   "name": "Laura Rojas",
+   "dates": "",
+   "gen": 6,
+   "x": -4860,
+   "dead": false,
+   "photo": ""
+  },
+  {
+   "parents": [
+    "pmw1ytxjxk2o",
+    "pmw1yqq0l9cb"
+   ],
+   "partners": [],
+   "ex": [],
+   "id": "pmw1ytyn2q29",
+   "name": "Uriel Pedroza Rojas",
+   "dates": "",
+   "gen": 7,
+   "x": -5056,
+   "dead": false,
+   "photo": ""
+  },
+  {
+   "parents": [],
+   "partners": [
+    "pmw1yqu0u9aj"
+   ],
+   "ex": [],
+   "id": "pmw1yu0lhtgy",
+   "name": "Fernanda Barcenas",
+   "dates": "",
+   "gen": 6,
+   "x": -5189,
+   "dead": false,
+   "photo": ""
+  },
+  {
+   "parents": [
+    "pmw1yu0lhtgy",
+    "pmw1yqu0u9aj"
+   ],
+   "partners": [],
+   "ex": [],
+   "id": "pmw1yu1u6njn",
+   "name": "Lia Pedroza Barcenas",
+   "dates": "",
+   "gen": 7,
+   "x": -5197,
+   "dead": false,
+   "photo": ""
+  },
+  {
+   "parents": [
+    "pmw1yqu0u9aj",
+    "pmw1yu0lhtgy"
+   ],
+   "partners": [],
+   "ex": [],
+   "id": "pmw1yuip9ufd",
+   "name": "Dante Pedroza Barcenas",
+   "dates": "",
+   "gen": 7,
+   "x": -5396,
+   "dead": false,
+   "photo": ""
+  },
+  {
+   "parents": [
+    "pmw1yqq0l9cb",
+    "pmw1ytxjxk2o"
+   ],
+   "partners": [],
+   "ex": [],
+   "id": "pmw1yumx9vym",
+   "name": "Naomi Pedroza Rojas",
+   "dates": "",
+   "gen": 7,
+   "x": -4855,
+   "dead": false,
+   "photo": ""
+  },
+  {
+   "parents": [
+    "pmw1ypwudg73",
+    "pmw1ybmv9wpx"
+   ],
+   "partners": [],
+   "ex": [],
+   "id": "pmw1yx23pcnb",
+   "name": "Hijo/a",
+   "dates": "",
+   "gen": 6,
+   "x": -5688,
+   "dead": false,
+   "photo": ""
+  },
+  {
+   "parents": [
+    "pmw1ypwudg73",
+    "pmw1ybmv9wpx"
+   ],
+   "partners": [],
+   "ex": [],
+   "id": "pmw1yx3l23el",
+   "name": "Hijo/a",
+   "dates": "",
+   "gen": 6,
+   "x": -5531,
+   "dead": false,
+   "photo": ""
+  },
+  {
+   "parents": [],
+   "partners": [
+    "pmw1yc5ctwca"
+   ],
+   "ex": [],
+   "id": "pmw1z8ihyt95",
+   "name": "Marta Gerardo",
+   "dates": "",
+   "gen": 5,
+   "x": -5864,
+   "dead": false,
+   "photo": ""
+  },
+  {
+   "parents": [
+    "pmw1z8ihyt95",
+    "pmw1yc5ctwca"
+   ],
+   "partners": [
+    "pmw1zayjpz7z"
+   ],
+   "ex": [
+    "pmw1zayjpz7z"
+   ],
+   "id": "pmw1z8qtzc0e",
+   "name": "Juan Carlos Pedroza Gerardo",
+   "dates": "",
+   "gen": 6,
+   "x": -6075,
+   "dead": false,
+   "photo": ""
+  },
+  {
+   "parents": [
+    "pmw1yc5ctwca",
+    "pmw1z8ihyt95"
+   ],
+   "partners": [],
+   "ex": [],
+   "id": "pmw1z8srqlwl",
+   "name": "Ursula Maricela Pedroza Gerardo",
+   "dates": "",
+   "gen": 6,
+   "x": -5805,
+   "dead": false,
+   "photo": ""
+  },
+  {
+   "parents": [],
+   "partners": [
+    "pmw1z8qtzc0e"
+   ],
+   "ex": [],
+   "id": "pmw1zayjpz7z",
+   "name": "Pareja",
+   "dates": "",
+   "gen": 6,
+   "x": -5925,
+   "dead": false,
+   "photo": ""
+  },
+  {
+   "parents": [
+    "pmw1z8qtzc0e",
+    "pmw1zayjpz7z"
+   ],
+   "partners": [],
+   "ex": [],
+   "id": "pmw1zb56tqf8",
+   "name": "Jimena Pedroza",
+   "dates": "",
+   "gen": 7,
+   "x": -6000,
+   "dead": false,
+   "photo": ""
+  },
+  {
+   "parents": [],
+   "partners": [
+    "pmw1xtlfghuo"
+   ],
+   "ex": [],
+   "id": "pmw1zv93bqkb",
+   "name": "Pareja",
+   "dates": "",
+   "gen": 6,
+   "x": -1125,
+   "dead": false,
+   "photo": ""
+  },
+  {
+   "parents": [],
+   "partners": [
+    "pmw1zz46uoe1"
+   ],
+   "ex": [],
+   "id": "pmw1zwruuu08",
+   "name": "Esteban Moreno",
+   "dates": "",
+   "gen": 3,
+   "x": -3650,
+   "dead": true,
+   "photo": ""
+  },
+  {
+   "parents": [],
+   "partners": [
+    "pmw1zwruuu08"
+   ],
+   "ex": [],
+   "id": "pmw1zz46uoe1",
+   "name": "Josefina Cruz",
+   "dates": "",
+   "gen": 3,
+   "x": -3500,
+   "dead": true,
+   "photo": ""
+  },
+  {
+   "parents": [
+    "pmw1zz46uoe1",
+    "pmw1zwruuu08"
+   ],
+   "partners": [],
+   "ex": [],
+   "id": "pmw1zzu6oc84",
+   "name": "Hijo/a",
+   "dates": "",
+   "gen": 4,
+   "x": -3500,
+   "dead": false,
+   "photo": ""
+  },
+  {
+   "parents": [],
+   "partners": [
+    "pmw201rw783n"
+   ],
+   "ex": [],
+   "id": "pmw200aqfjxn",
+   "name": "Emilia Millan",
+   "dates": "",
+   "gen": 3,
+   "x": -3810,
+   "dead": true,
+   "photo": ""
+  },
+  {
+   "parents": [],
+   "partners": [
+    "pmw200aqfjxn"
+   ],
+   "ex": [],
+   "id": "pmw201rw783n",
+   "name": "Faustino Pedroza",
+   "dates": "",
+   "gen": 3,
+   "x": -3989,
+   "dead": true,
+   "photo": ""
+  },
+  {
+   "parents": [
+    "pmw201rw783n",
+    "pmw200aqfjxn"
+   ],
+   "partners": [],
+   "ex": [],
+   "id": "pmw2029u0npq",
+   "name": "Hijo/a",
+   "dates": "",
+   "gen": 4,
+   "x": -3987,
+   "dead": false,
+   "photo": ""
+  },
+  {
+   "parents": [
+    "pmw38oxbinyo",
+    "pmw38r91xcu9"
+   ],
+   "partners": [
+    "pmw209l6ve99"
+   ],
+   "ex": [],
+   "id": "pmw208xvcu53",
+   "name": "Hilario Moranchel Tapia",
+   "dates": "",
+   "gen": 4,
+   "x": 749,
+   "dead": true,
+   "photo": ""
+  },
+  {
+   "parents": [
+    "pmw39a0m6jwh",
+    "pmw39agfid2u"
+   ],
+   "partners": [
+    "pmw208xvcu53"
+   ],
+   "ex": [],
+   "id": "pmw209l6ve99",
+   "name": "Lucia Julia Roman Rodriguez",
+   "dates": "",
+   "gen": 4,
+   "x": 928,
+   "dead": true,
+   "photo": ""
+  },
+  {
+   "parents": [
+    "pmw209l6ve99",
+    "pmw208xvcu53"
+   ],
+   "partners": [
+    "pmw20f134tug"
+   ],
+   "ex": [],
+   "id": "pmw20cvmpznd",
+   "name": "Eustaquio Moranchel Roman",
+   "dates": "",
+   "gen": 5,
+   "x": -437,
+   "dead": false,
+   "photo": ""
+  },
+  {
+   "parents": [
+    "pmw208xvcu53",
+    "pmw209l6ve99"
+   ],
+   "partners": [
+    "pmw20kut4lul"
+   ],
+   "ex": [],
+   "id": "pmw20cy2nrn8",
+   "name": "Reynaldo Moranchel Roman",
+   "dates": "",
+   "gen": 5,
+   "x": 543,
+   "dead": false,
+   "photo": ""
+  },
+  {
+   "parents": [
+    "pmw208xvcu53",
+    "pmw209l6ve99"
+   ],
+   "partners": [
+    "pmw20omyw9xb"
+   ],
+   "ex": [],
+   "id": "pmw20czk0h3b",
+   "name": "Maria Moranchel Roman",
+   "dates": "",
+   "gen": 5,
+   "x": 1090,
+   "dead": false,
+   "photo": ""
+  },
+  {
+   "parents": [
+    "pmw208xvcu53",
+    "pmw209l6ve99"
+   ],
+   "partners": [
+    "pmw20v9igaio",
+    "pmw20vawgqq7"
+   ],
+   "ex": [],
+   "id": "pmw20d0r4z8h",
+   "name": "Luci Moranchel Roman",
+   "dates": "",
+   "gen": 5,
+   "x": 1969,
+   "dead": false,
+   "photo": ""
+  },
+  {
+   "parents": [
+    "pmw208xvcu53",
+    "pmw209l6ve99"
+   ],
+   "partners": [
+    "pmw211ne97i6"
+   ],
+   "ex": [],
+   "id": "pmw20d23zgb2",
+   "name": "Juana Moranchel Roman",
+   "dates": "",
+   "gen": 5,
+   "x": 2651,
+   "dead": false,
+   "photo": ""
+  },
+  {
+   "parents": [
+    "pmw208xvcu53",
+    "pmw209l6ve99"
+   ],
+   "partners": [
+    "pmw21b8ahbiy"
+   ],
+   "ex": [],
+   "id": "pmw20d3gglfl",
+   "name": "Aurelio Moranchel Roman",
+   "dates": "",
+   "gen": 5,
+   "x": 3635,
+   "dead": false,
+   "photo": ""
+  },
+  {
+   "parents": [
+    "pmw208xvcu53",
+    "pmw209l6ve99"
+   ],
+   "partners": [
+    "pmw21ibmxjeb"
+   ],
+   "ex": [],
+   "id": "pmw20d4uvey9",
+   "name": "Eufracia Moranchel Roman",
+   "dates": "",
+   "gen": 5,
+   "x": 4563,
+   "dead": false,
+   "photo": ""
+  },
+  {
+   "parents": [
+    "pmw208xvcu53",
+    "pmw209l6ve99"
+   ],
+   "partners": [],
+   "ex": [],
+   "id": "pmw20d60o3ed",
+   "name": "Hijo/a",
+   "dates":
