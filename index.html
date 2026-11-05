@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8"><title>Mi árbol genealógico</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<style>
+:root{--bg:#f6f4ef;--band:#e9e4d9;--band2:#f2efe8;--ink:#2a2723;--mut:#6f695f;--card:#fff;--line:#8a8174;--acc:#2f6b57;--bd:#c4bcad;--anc:#2f6fc0;--desc:#d9780f}
+@media (prefers-color-scheme:dark){:root{--bg:#171614;--band:#2c2925;--band2:#211f1c;--ink:#f3efe6;--mut:#b8b1a4;--card:#37332e;--line:#b9b1a3;--acc:#8fd0b6;--bd:#6e685c;--anc:#6db3ff;--desc:#ffb257}}
+*{box-sizing:border-box}html,body{height:100%;margin:0}
+body{background:var(--bg);color:var(--ink);font:14px/1.4 system-ui,-apple-system,"Segoe UI",sans-serif;overflow:hidden}
+button,input{font:inherit;color:var(--ink);background:var(--card);border:1px solid var(--bd);border-radius:8px;padding:6px 10px}button{cursor:pointer}button.p{background:var(--acc);color:var(--bg);border-color:var(--acc)}
+#top{position:fixed;left:0;right:0;top:0;z-index:6;padding:calc(8px + env(safe-area-inset-top,0px)) 12px 8px;display:flex;gap:8px;align-items:center;background:var(--bg);border-bottom:1px solid var(--bd)}
+#top h1{font:600 16px Georgia,serif;margin:0 auto 0 0;white-space:nowrap}#sw{position:relative;flex:1;max-width:360px}#q{width:100%}
+#res{position:absolute;left:0;right:0;top:100%;margin-top:4px;background:var(--card);border:1px solid var(--bd);border-radius:10px;max-height:50vh;overflow:auto;display:none;z-index:7}
+#res button{display:block;width:100%;text-align:left;border:0;border-radius:0;background:none;padding:9px 12px}#res span{color:var(--mut);font-size:12px}
+@media (max-width:640px){#top h1{display:none}}@media (pointer:coarse){#zi,#zo{display:none}}
+#view{position:fixed;inset:0;cursor:grab;touch-action:none}#world{position:absolute;left:0;top:0;transform-origin:0 0}
+.band{position:absolute;height:220px;border-top:1px solid var(--bd)}
+svg#ln{position:absolute;left:-5000px;top:0;width:10000px;height:3000px;overflow:visible;pointer-events:none}#ln path{vector-effect:non-scaling-stroke}
+#gl div{position:fixed;left:8px;z-index:2;pointer-events:none;background:var(--card);border:1px solid var(--bd);color:var(--mut);font-size:12px;padding:2px 9px;border-radius:12px;opacity:.92}
+.n{position:absolute;width:120px;text-align:center;cursor:pointer;user-select:none;transition:opacity .15s}
+.ph{position:relative;width:84px;height:84px;margin:0 auto;border-radius:50%;background:var(--card);border:solid var(--bd);border-width:min(calc(3px*var(--inv,1)),12px)}
+.ph img{position:absolute;left:0;top:0;width:100%;height:100%;border-radius:50%;object-fit:cover}
+.ph i,.av i{display:flex;width:100%;height:100%;align-items:center;justify-content:center;font:600 28px Georgia,serif;color:var(--mut);font-style:normal}
+.n.sel .ph{border-color:var(--acc);box-shadow:0 0 0 4px color-mix(in srgb,var(--acc) 35%,transparent)}
+.n.dead img{filter:grayscale(1)}.rb{position:absolute;left:-8px;top:-8px;width:30px;height:34px}
+.nm{display:inline-block;max-width:124px;margin-top:6px;padding:1px 8px;border-radius:10px;background:color-mix(in srgb,var(--bg) 88%,transparent);font-weight:600;line-height:1.2}
+.dt{color:var(--mut);font-size:12px;margin-top:1px}
+.n.dim{opacity:.3}.n.anc .ph{border-color:var(--anc)}.n.desc .ph{border-color:var(--desc)}.n.anc .nm{color:var(--anc)}.n.desc .nm{color:var(--desc)}
+body.l1 .dt{display:none}body.l2 .nm{display:none}body.l2 .n.sel .nm,body.l2 .n.anc .nm,body.l2 .n.desc .nm{display:inline-block}
+#card{position:fixed;left:50%;transform:translateX(-50%);bottom:0;width:min(560px,100%);max-height:42vh;overflow:auto;background:var(--card);border:1px solid var(--bd);border-radius:14px 14px 0 0;padding:12px 14px calc(12px + env(safe-area-inset-bottom,0px));z-index:5;display:none}
+.hd{display:flex;gap:10px;align-items:center}.t{flex:1;display:flex;flex-direction:column;min-width:0}.t span{color:var(--mut);font-size:12px}
+.av{position:relative;flex:none;width:48px;height:48px;border-radius:50%;border:2px solid var(--bd)}.av img{position:absolute;inset:0;width:100%;height:100%;border-radius:50%;object-fit:cover}
+.g{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-top:8px}.g b{color:var(--mut);font-size:12px;width:62px;font-weight:500}.g button{border-radius:16px;padding:4px 11px}
+#msg{display:none;position:fixed;left:50%;top:50%;transform:translate(-50%,-50%);width:min(420px,90%);padding:16px;background:var(--card);border:1px solid var(--bd);border-radius:10px;z-index:8;text-align:center}
+#hint{position:fixed;left:12px;bottom:calc(10px + env(safe-area-inset-bottom,0px));color:var(--mut);font-size:12px;z-index:3;max-width:70%;background:color-mix(in srgb,var(--bg) 85%,transparent);padding:2px 6px;border-radius:6px}
+</style></head><body>
+<div id="top"><h1>🌳 Mi árbol genealógico</h1><div id="sw"><input id="q" type="search" placeholder="Buscar persona…" autocomplete="off"><div id="res"></div></div><button id="zo">−</button><button id="zi">+</button><button id="fit">Ver todo</button></div>
+<div id="view"><div id="world"><div id="bands"></div><svg id="ln"></svg><div id="nodes"></div></div></div>
+<div id="gl"></div><div id="card"></div><div id="msg"></div>
+<div id="hint">Pellizca para hacer zoom · toca a alguien para ver su familia</div>
+<script>
+const BH=220,esc=s=>String(s||"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c])),$=id=>document.getElementById(id);
+let P={},S=new Set(),sel=null,fam=false,s=1,tx=0,ty=0,anim=0,drag=null;const ptr=new Map();
+const norm=t=>String(t||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
+function gens(){let m=0;for(const p of Object.values(P))m=Math.max(m,p.gen||0);return m+1}
+function lineage(id){const anc=new Set,desc=new Set;if(!id||!P[id])return{anc,desc};
+ (function up(i){for(const p of (P[i].parents||[]))if(P[p]&&!anc.has(p)){anc.add(p);up(p)}})(id);
+ (function dn(i){for(const c of Object.values(P))if((c.parents||[]).includes(i)&&!desc.has(c.id)){desc.add(c.id);dn(c.id)}})(id);return{anc,desc}}
+function kin(id){const p=P[id],all=Object.values(P),pa=(p.parents||[]).filter(i=>P[i]);
+ return{par:pa,pts:(p.partners||[]).filter(i=>P[i]),kids:all.filter(c=>(c.parents||[]).includes(id)).map(c=>c.id),sibs:all.filter(c=>c.id!==id&&(c.parents||[]).some(x=>pa.includes(x))).map(c=>c.id)}}
+function visible(){if(!(fam&&sel))return null;const lg=lineage(sel),k=kin(sel),v=new Set([sel,...lg.anc,...lg.desc,...k.sibs]);
+ [...v].forEach(i=>(P[i].partners||[]).forEach(j=>P[j]&&v.add(j)));return v}
+function render(){
+ for(const i of [...S])if(!P[i])S.delete(i);
+ sel=S.size===1?[...S][0]:null;if(!sel)fam=false;
+ const all=Object.values(P),vis=visible(),L=vis?all.filter(p=>vis.has(p.id)):all,lg=lineage(sel),hl=sel?new Set([sel,...lg.anc,...lg.desc]):null;
+ let x0=0,x1=0;for(const p of all){x0=Math.min(x0,p.x);x1=Math.max(x1,p.x)}x0-=220;x1+=220;
+ $("bands").innerHTML=Array.from({length:gens()},(_,g)=>`<div class="band" style="top:${g*BH}px;left:${x0}px;width:${x1-x0}px;background:${g%2?"var(--band2)":"var(--band)"}"></div>`).join("");
+ $("nodes").innerHTML=L.map(p=>`<div class="n${S.has(p.id)?" sel":""}${p.dead?" dead":""}${lg.anc.has(p.id)?" anc":""}${lg.desc.has(p.id)?" desc":""}${hl&&!hl.has(p.id)?" dim":""}" data-id="${p.id}" style="left:${p.x-60}px;top:${(p.gen||0)*BH+30}px"><div class="ph"><i>${esc((p.name||"?")[0]).toUpperCase()}</i>${p.photo?`<img src="${esc(p.photo)}" draggable="false" onerror="this.remove()">`:""}${p.dead?`<svg class="rb" viewBox="0 0 30 34"><path d="M15 15C8 2 1 4 3 10c2 5 9 5 12 5zM15 15c7-13 14-11 12-5-2 5-9 5-12 5z" fill="#111" stroke="#888" stroke-width=".8"/><path d="M13 15l-6 17 8-5 8 5-6-17z" fill="#111" stroke="#888" stroke-width=".8"/></svg>`:""}</div><div class="nm">${esc(p.name)}</div><div class="dt">${esc(p.dates)}</div></div>`).join("");
+ lines(lg,hl,vis);card();xf();
+}
+function lines(lg,hl,vis){
+ let g="",h="",seen={};
+ for(const c of Object.values(P)){
+  if(vis&&!vis.has(c.id))continue;
+  for(const id of c.parents||[]){const a=P[id];if(!a||(vis&&!vis.has(id)))continue;
+   const x1=a.x+5000,y1=(a.gen||0)*BH+30,x2=c.x+5000,y2=(c.gen||0)*BH+30;
+   const d=`M${x1} ${y1+118}C${x1} ${y1+160} ${x2} ${y2-40} ${x2} ${y2-2}`;
+   const up=sel&&(c.id===sel||lg.anc.has(c.id))&&lg.anc.has(id),dn=sel&&(id===sel||lg.desc.has(id))&&lg.desc.has(c.id);
+   if(up||dn)h+=`<path d="${d}" fill="none" style="stroke:var(--${up?"anc":"desc"});stroke-width:4"/>`;
+   else g+=`<path d="${d}" fill="none" style="stroke:var(--line);stroke-width:2${sel?";opacity:.25":""}"/>`}
+  for(const id of c.partners||[]){const a=P[id],k=[c.id,id].sort().join();if(!a||seen[k]||(vis&&!vis.has(id)))continue;seen[k]=1;
+   const x1=c.x+5000,y1=(c.gen||0)*BH+30,x2=a.x+5000,y2=(a.gen||0)*BH+30,ex=(c.ex||[]).includes(id)||(a.ex||[]).includes(c.id),dim=hl&&!(hl.has(c.id)&&hl.has(a.id));
+   g+=`<g${dim?' opacity=".25"':""}><path d="M${x1} ${y1+42}L${x2} ${y2+42}" style="stroke:var(--line);stroke-width:3" ${ex?'stroke-dasharray="6 6"':""}/><text x="${(x1+x2)/2}" y="${(y1+y2)/2+36}" text-anchor="middle" font-size="16">${ex?"":"💍"}</text></g>`}}
+ $("ln").innerHTML=g+h}
+// ---------- tarjeta ----------
+function card(){const c=$("card"),p=P[sel];$("hint").style.display=p?"none":"block";if(!p){c.style.display="none";return}
+ const k=kin(sel),chip=(i,x)=>`<button data-go="${i}">${esc(P[i].name)}${P[i].dead?" †":""}${x?" (ex)":""}</button>`,
+ grp=(t,a,f)=>a.length?`<div class="g"><b>${t}</b>${a.map(i=>chip(i,f&&f(i))).join("")}</div>`:"";
+ const body=grp("Padres",k.par)+grp("Pareja",k.pts,i=>(p.ex||[]).includes(i)||(P[i].ex||[]).includes(sel))+grp("Hijos",k.kids)+grp("Hermanos",k.sibs);
+ c.style.display="block";
+ c.innerHTML=`<div class="hd"><div class="av"><i>${esc((p.name||"?")[0]).toUpperCase()}</i>${p.photo?`<img src="${esc(p.photo)}" onerror="this.remove()">`:""}</div><div class="t"><b>${esc(p.name)}</b><span>${esc(p.dates)}${p.dead?(p.dates?" · ":"")+"† fallecido/a":""}</span></div><button id="fam" class="${fam?"p":""}">${fam?"Ver todo":"Solo su familia"}</button><button id="cx">✕</button></div>${body||'<div class="g"><b style="width:auto">Sin parientes registrados</b></div>'}`}
+$("card").onclick=e=>{const b=e.target.closest("[data-go]");
+ if(b)return go(b.dataset.go);
+ if(e.target.closest("#cx")){S=new Set();render()}
+ else if(e.target.closest("#fam")){fam=!fam;render();fam?fit([...visible()].map(i=>P[i]),true):focusOn(sel,true)}};
+function go(id){S=new Set([id]);render();fam?fit([...visible()].map(i=>P[i]),true):focusOn(id,true)}
+// ---------- vista ----------
+const clamp=v=>Math.min(2.5,Math.max(.05,v));
+function xf(){const w=$("world");w.style.transform=`translate(${tx}px,${ty}px) scale(${s})`;w.style.setProperty("--inv",1/s);
+ document.body.classList.toggle("l1",s<.6);document.body.classList.toggle("l2",s<.35);
+ let h="";const n=gens();for(let g=0;g<n;g++){const y=ty+g*BH*s,hg=BH*s;if(y>innerHeight||y+hg<56)continue;h+=`<div style="top:${Math.min(Math.max(y+6,60),y+hg-26)}px">Generación ${g+1}</div>`}$("gl").innerHTML=h}
+function zoom(k,cx,cy){const n=clamp(s*k);tx=cx-(cx-tx)*n/s;ty=cy-(cy-ty)*n/s;s=n;xf()}
+function animTo(ns,ntx,nty){cancelAnimationFrame(anim);const a=[s,tx,ty],t0=performance.now();
+ (function f(t){const k=Math.min(1,(t-t0)/350),e=1-Math.pow(1-k,3);s=a[0]+(ns-a[0])*e;tx=a[1]+(ntx-a[1])*e;ty=a[2]+(nty-a[2])*e;xf();if(k<1)anim=requestAnimationFrame(f)})(t0)}
+const cardH=()=>$("card").style.display==="none"?0:$("card").offsetHeight;
+function fit(list,an){const L=list||Object.values(P);if(!L.length){s=1;tx=innerWidth/2;ty=70;xf();return}
+ const X0=Math.min(...L.map(p=>p.x))-90,X1=Math.max(...L.map(p=>p.x))+90,Y0=Math.min(...L.map(p=>p.gen||0))*BH,Y1=(Math.max(...L.map(p=>p.gen||0))+1)*BH,ah=innerHeight-60-cardH();
+ const ns=clamp(Math.min(1.2,innerWidth/(X1-X0),ah/(Y1-Y0))),ntx=-X0*ns+(innerWidth-(X1-X0)*ns)/2,nty=60+(ah-(Y1-Y0)*ns)/2-Y0*ns;
+ if(an)animTo(ns,ntx,nty);else{s=ns;tx=ntx;ty=nty;xf()}}
+function focusOn(id,force){const p=P[id];if(!p)return;const cy=(p.gen||0)*BH+90,ah=innerHeight-60-cardH(),sx=tx+p.x*s,sy=ty+cy*s;
+ if(!force&&sx>innerWidth*.12&&sx<innerWidth*.88&&sy>60+ah*.12&&sy<60+ah*.88)return;
+ const ns=Math.max(s,.7);animTo(ns,innerWidth/2-p.x*ns,60+ah/2-cy*ns)}
+$("fit").onclick=()=>{S=new Set();render();fit(null,true)};
+$("zi").onclick=()=>zoom(1.25,innerWidth/2,innerHeight/2);$("zo").onclick=()=>zoom(.8,innerWidth/2,innerHeight/2);
+const V=$("view");
+V.addEventListener("wheel",e=>{e.preventDefault();zoom(e.deltaY<0?1.1:.9,e.clientX,e.clientY)},{passive:false});
+V.addEventListener("pointerdown",e=>{cancelAnimationFrame(anim);try{V.setPointerCapture(e.pointerId)}catch(_){}
+ ptr.set(e.pointerId,{x:e.clientX,y:e.clientY});
+ if(ptr.size===1){const n=e.target.closest(".n");drag={x:e.clientX,y:e.clientY,tx,ty,n:n&&n.dataset.id,moved:false}}
+ else if(ptr.size===2){const[a,b]=[...ptr.values()];drag={pinch:1,moved:true,d0:Math.hypot(a.x-b.x,a.y-b.y)||1,s0:s,tx0:tx,ty0:ty,mx0:(a.x+b.x)/2,my0:(a.y+b.y)/2}}});
+V.addEventListener("pointermove",e=>{if(!ptr.has(e.pointerId)||!drag)return;ptr.set(e.pointerId,{x:e.clientX,y:e.clientY});
+ if(drag.pinch){if(ptr.size<2)return;const[a,b]=[...ptr.values()],d=Math.hypot(a.x-b.x,a.y-b.y),mx=(a.x+b.x)/2,my=(a.y+b.y)/2,ns=clamp(drag.s0*d/drag.d0),wx=(drag.mx0-drag.tx0)/drag.s0,wy=(drag.my0-drag.ty0)/drag.s0;
+  s=ns;tx=mx-wx*ns;ty=my-wy*ns;xf();return}
+ const dx=e.clientX-drag.x,dy=e.clientY-drag.y;if(Math.abs(dx)+Math.abs(dy)>5)drag.moved=true;if(drag.moved){tx=drag.tx+dx;ty=drag.ty+dy;xf()}});
+function up(e){ptr.delete(e.pointerId);const d=drag;
+ if(ptr.size===1){const[r]=[...ptr.values()];drag={x:r.x,y:r.y,tx,ty,n:null,moved:true};return}
+ if(ptr.size>1)return;drag=null;
+ if(d&&!d.moved&&e.type==="pointerup"){if(d.n){S=new Set([d.n]);render();focusOn(d.n,false)}else if(S.size){S=new Set();render()}}}
+V.addEventListener("pointerup",up);V.addEventListener("pointercancel",up);
+// ---------- buscador ----------
+const q=$("q"),res=$("res");
+function search(){const t=norm(q.value.trim());if(!t){res.style.display="none";return[]}
+ const m=Object.values(P).filter(p=>norm(p.name).includes(t)).slice(0,8);
+ res.innerHTML=m.map(p=>`<button data-go="${p.id}">${esc(p.name)} <span>${esc(p.dates)}</span></button>`).join("")||'<div class="dt" style="padding:9px 12px">Sin resultados</div>';res.style.display="block";return m}
+function pick(id){q.value="";res.style.display="none";q.blur();go(id)}
+q.oninput=search;q.onfocus=search;
+q.onkeydown=e=>{if(e.key==="Enter"){const m=search();if(m[0])pick(m[0].id)}else if(e.key==="Escape"){q.value="";search()}};
+res.onclick=e=>{const b=e.target.closest("[data-go]");if(b)pick(b.dataset.go)};
+// ---------- carga ----------
+function msg(t){const m=$("msg");m.textContent=t;m.style.display="block"}
+(async()=>{tx=innerWidth/2;ty=70;xf();
+ try{const r=await fetch("data.json?v="+Date.now());if(!r.ok)throw new Error("HTTP "+r.status+" (¿está data.json junto a este archivo?)");
+  const j=await r.json(),l=Array.isArray(j)?j:j.people;if(!Array.isArray(l))throw new Error("no encontré la lista people");
+  l.forEach(p=>P[p.id]={parents:[],partners:[],ex:[],...p});
+  if(!l.length)msg("data.json no tiene personas todavía.");render();fit()}
+ catch(err){msg("No pude cargar data.json: "+err.message+". Si abriste este archivo con doble clic no funciona; debe estar publicado (GitHub Pages) o abierto con un servidor local.")}})();
+</script></body></html>
